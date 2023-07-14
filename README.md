@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1aab50aa-14cd-42ab-b539-ac55e173fb00/deploy-status)](https://app.netlify.com/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4b054c6f-21af-4dd2-afd3-504da3fba956/deploy-status)](https://app.netlify.com/sites/dubairealty/deploys)
 
 # Dubai Realty Website
 
