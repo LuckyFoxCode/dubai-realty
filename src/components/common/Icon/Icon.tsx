@@ -11,7 +11,6 @@ export interface IconProps {
 }
 
 const getIconName = (name: IconType) => `Icon${name}`;
-console.log(getIconName);
 
 export const Icon: FC<IconProps> = ({ fill, name, size, style, className, ...rest }) => {
   const IconComponent =
