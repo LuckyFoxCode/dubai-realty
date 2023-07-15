@@ -1,0 +1,63 @@
+@import 'styles';
+
+.Logo {
+  position: relative;
+  width: max-content;
+  @include flex-col();
+  padding: 5px 10px 10px;
+  color: $N0;
+  border-left: 2px solid $YELLOW;
+
+  &:hover::before {
+    width: 15px;
+  }
+
+  &:hover::after {
+    width: 45px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: $YELLOW;
+    width: 30px;
+    height: 2px;
+    @include transition(width);
+    @include media($SCREEN_TABLET_SMALL) {
+      width: 35px;
+    }
+    @include media($SCREEN_DESKTOP) {
+      width: 40px;
+    }
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &__title {
+    font-family: $SECOND_FONT;
+    @include text(18px, 700, $N0);
+    @include media($SCREEN_TABLET_SMALL) {
+      font-size: 20px;
+    }
+    @include media($SCREEN_DESKTOP) {
+      font-size: 28px;
+    }
+  }
+
+  &__subtitle {
+    @include text(10px, 400, $N0);
+    text-transform: capitalize;
+    opacity: 0.6;
+    @include media($SCREEN_DESKTOP) {
+      font-size: 11px;
+    }
+  }
+}
