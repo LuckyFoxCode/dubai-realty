@@ -1,0 +1,38 @@
+@import 'styles';
+
+.SocialPanel {
+  width: fit-content;
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    &_link {
+      display: flex;
+    }
+
+    &_icon {
+      @include transition(fill);
+      &:hover {
+        fill: $YELLOW;
+      }
+    }
+  }
+}
+
+.top {
+  display: none;
+  height: 160px;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: space-between;
+  @include media($SCREEN_TABLET_SMALL) {
+    display: flex;
+  }
+}
+
+.bottom {
+  width: 210px;
+  flex-direction: row;
+  justify-content: space-between;
+}
