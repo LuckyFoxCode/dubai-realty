@@ -17,6 +17,7 @@
     "paths": {
       "pages/*": ["pages/*"],
       "router/*": ["router/*"],
+      "assets/*": ["assets/*"],
       "components/*": ["components/*"]
     },
 
@@ -26,6 +27,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "index.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
