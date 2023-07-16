@@ -1,0 +1,66 @@
+@import 'styles';
+
+.Video {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: darkcyan;
+  background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 40px;
+  @include paddingX;
+  @include media($SCREEN_TABLET_SMALL) {
+    height: 395px;
+    margin-bottom: 70px;
+  }
+  @include media($SCREEN_DESKTOP) {
+    height: 540px;
+    margin-bottom: 95px;
+  }
+  @include media($SCREEN_RETINA) {
+    width: calc(100% - 120px);
+    height: 920px;
+    margin-bottom: 120px;
+  }
+
+  &__button {
+    @include size(24px, true);
+    @include flex(center, center);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $YELLOW;
+    cursor: pointer;
+    @include media($SCREEN_TABLET_SMALL) {
+      width: 50px;
+      height: 50px;
+    }
+    @include media($SCREEN_DESKTOP) {
+      width: 85px;
+      height: 85px;
+    }
+    @include media($SCREEN_RETINA) {
+      width: 120px;
+      height: 120px;
+    }
+
+    &_icon {
+      @include size(10px);
+      transform: rotate(-90deg);
+      @include media($SCREEN_TABLET_SMALL) {
+        width: 15px;
+        height: 15px;
+      }
+      @include media($SCREEN_DESKTOP) {
+        width: 20px;
+        height: 20px;
+      }
+      @include media($SCREEN_RETINA) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
