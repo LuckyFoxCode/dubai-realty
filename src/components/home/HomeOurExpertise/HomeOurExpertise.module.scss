@@ -1,24 +1,29 @@
 @import 'styles';
 
 .OurExpertise {
+  margin-bottom: 40px;
   @include paddingX;
-
+  @include media($SCREEN_TABLET_SMALL) {
+    margin-bottom: 70px;
+  }
   @include media($SCREEN_TABLET_LARGE) {
     max-width: 745px;
     padding: 0;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @include media($SCREEN_DESKTOP) {
+    margin-bottom: 90px;
   }
 
   &__title {
     @include text(14px, 600, $YELLOW);
     line-height: normal;
     margin-bottom: 10px;
-
     @include media($SCREEN_TABLET_SMALL) {
       font-size: 16px;
       margin-bottom: 15px;
     }
-
     @include media($SCREEN_DESKTOP) {
       font-size: 18px;
       margin-bottom: 40px;
@@ -30,20 +35,17 @@
     @include text(24px, 700, $N1);
     line-height: normal;
     margin-bottom: 10px;
-
     @include media($SCREEN_TABLET_SMALL) {
       display: block;
       max-width: 470px;
       font-size: 30px;
       margin-bottom: 23px;
     }
-
     @include media($SCREEN_DESKTOP) {
       display: inline;
       font-size: 50px;
       margin-bottom: 33px;
     }
-
     @include media($SCREEN_RETINA) {
       font-size: 70px;
     }
