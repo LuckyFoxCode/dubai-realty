@@ -1,0 +1,48 @@
+@import 'styles';
+
+.Quotes {
+  margin-bottom: 40px;
+  @include paddingX;
+  @include media($SCREEN_TABLET_SMALL) {
+    margin-bottom: 70px;
+  }
+  @include media($SCREEN_HD) {
+    padding: 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1110px;
+    border: 1px solid $YELLOW;
+    padding: 20px;
+    margin: 0 auto;
+    @include media($SCREEN_TABLET_SMALL) {
+      padding: 30px 60px;
+    }
+    @include media($SCREEN_DESKTOP) {
+      padding: 30px 70px;
+    }
+    @include media($SCREEN_RETINA) {
+      padding: 30px 30px;
+    }
+
+    &_text {
+      font-family: $SECOND_FONT;
+      @include text(16px, 400, _);
+      line-height: 160%;
+      @include media($SCREEN_TABLET_SMALL) {
+        font-size: 18px;
+      }
+      @include media($SCREEN_DESKTOP) {
+        font-size: 24px;
+      }
+      @include media($SCREEN_RETINA) {
+        font-size: 36px;
+      }
+
+      span {
+        color: $YELLOW;
+      }
+    }
+  }
+}
