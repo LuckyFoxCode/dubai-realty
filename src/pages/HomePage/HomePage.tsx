@@ -1,4 +1,4 @@
-import { HomeOurExpertise, HomeQuotes, HomeVideo } from 'components/home';
+import { HomeGallery, HomeOurExpertise, HomeQuotes, HomeVideo } from 'components/home';
 import { FC } from 'react';
 
 export const HomePage: FC = () => {
@@ -7,6 +7,7 @@ export const HomePage: FC = () => {
       <HomeOurExpertise />
       <HomeVideo />
       <HomeQuotes />
+      <HomeGallery />
     </main>
   );
 };
