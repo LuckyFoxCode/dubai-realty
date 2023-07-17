@@ -1,0 +1,131 @@
+@import 'styles';
+
+.ContactUs {
+  width: 100%;
+  text-align: center;
+  padding: 50px 35px;
+  background-color: $YELLOW;
+  background-image: url('/images/ContactUs_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  @include media($SCREEN_RETINA) {
+    width: calc(100% - 120px);
+  }
+
+  &__subtitle {
+    @include text(12px, 600, $N5);
+    line-height: normal;
+    margin-bottom: 10px;
+    @include media($SCREEN_TABLET_SMALL) {
+      font-size: 14px;
+    }
+    @include media($SCREEN_DESKTOP) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    font-family: $SECOND_FONT;
+    @include text(50px, 700, $N5);
+    line-height: normal;
+    margin-bottom: 20px;
+    @include media($SCREEN_TABLET_SMALL) {
+      font-size: 70px;
+    }
+    @include media($SCREEN_DESKTOP) {
+      font-size: 90px;
+    }
+    @include media($SCREEN_FULLHD) {
+      font-size: 120px;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 470px;
+    @include flex;
+    margin: 0 auto;
+
+    &_input {
+      width: 100%;
+      @include text(12px, 400, rgba($N5, 0.5));
+      background-color: $N0;
+      padding: 13px 14px 14px;
+      border: none;
+      &::placeholder {
+        color: rgba($N5, 0.5);
+      }
+      @include media($SCREEN_TABLET_SMALL) {
+        padding-left: 28px;
+      }
+      @include media($SCREEN_DESKTOP) {
+        padding-top: 25px;
+        padding-bottom: 22px;
+      }
+    }
+
+    &_button {
+      @include text(12px, 400, $N0);
+      line-height: normal;
+      background-color: $N5;
+      padding: 12px 36px 13px;
+      cursor: pointer;
+      @include transition(color);
+      &:hover,
+      &:focus {
+        color: $YELLOW;
+      }
+      @include media($SCREEN_TABLET_SMALL) {
+        padding-left: 65px;
+        padding-right: 65px;
+      }
+    }
+  }
+}
+
+.home {
+  margin-bottom: 40px;
+  @include media($SCREEN_TABLET_SMALL) {
+    margin-bottom: 70px;
+  }
+  @include media($SCREEN_DESKTOP) {
+    margin-bottom: 90px;
+  }
+  @include media($SCREEN_FULLHD) {
+    margin-bottom: 110px;
+  }
+  @include media($SCREEN_RETINA) {
+    margin-bottom: 140px;
+  }
+}
+
+.services {
+  margin-bottom: 50px;
+  @include media($SCREEN_DESKTOP) {
+    margin-bottom: 70px;
+  }
+  @include media($SCREEN_FULLHD) {
+    margin-bottom: 90px;
+  }
+  @include media($SCREEN_RETINA) {
+    margin-bottom: 110px;
+  }
+}
+
+.category {
+  margin-bottom: 40px;
+  @include media($SCREEN_TABLET_SMALL) {
+    margin-bottom: 80px;
+  }
+  @include media($SCREEN_DESKTOP) {
+    margin-bottom: 110px;
+  }
+  @include media($SCREEN_FULLHD) {
+    margin-bottom: 160px;
+  }
+  @include media($SCREEN_RETINA) {
+    margin-bottom: 210px;
+  }
+}
