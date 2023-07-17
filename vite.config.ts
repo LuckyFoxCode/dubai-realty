@@ -8,7 +8,9 @@ export default defineConfig({
   plugins: [react(), svgr()],
   resolve: {
     alias: {
+      data: '/src/data',
       pages: '/src/pages',
+      utils: '/src/utils',
       router: '/src/router',
       assets: '/src/assets',
       components: '/src/components',
