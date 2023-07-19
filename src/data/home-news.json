@@ -1,0 +1,23 @@
+[
+  {
+    "id": "01",
+    "date": "Jule 03, 2022",
+    "title": "Discover Architecture",
+    "descr": "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+    "image": "/images/HomeNews01.jpg"
+  },
+  {
+    "id": "02",
+    "date": "Jule 07, 2022",
+    "title": "Discover Architecture",
+    "descr": "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+    "image": "/images/HomeNews02.jpg"
+  },
+  {
+    "id": "03",
+    "date": "Jule 13, 2022",
+    "title": "Discover Architecture",
+    "descr": "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+    "image": "/images/HomeNews03.jpg"
+  }
+]
