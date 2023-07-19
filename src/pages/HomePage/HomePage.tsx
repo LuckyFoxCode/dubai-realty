@@ -1,5 +1,5 @@
 import { ContactUs } from 'components/common';
-import { HomeGallery, HomeOurExpertise, HomeQuotes, HomeVideo } from 'components/home';
+import { HomeGallery, HomeNews, HomeOurExpertise, HomeQuotes, HomeVideo } from 'components/home';
 import { FC } from 'react';
 
 export const HomePage: FC = () => {
@@ -10,6 +10,7 @@ export const HomePage: FC = () => {
       <HomeQuotes />
       <HomeGallery />
       <ContactUs section='home' />
+      <HomeNews />
     </main>
   );
 };
